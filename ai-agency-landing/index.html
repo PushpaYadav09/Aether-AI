@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Automation Agency</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <!-- =======================
+        NAVIGATION
+  ============================ -->
+  <header class="nav glass">
+    <div class="container nav-inner">
+      <a href="#" class="logo">AI<span>Agency</span></a>
+
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="btn btn-primary" id="hireBtn">Start Project</button>
+    </div>
+  </header>
+
+  <!-- =======================
+        HERO SECTION
+  ============================ -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+
+      <div class="hero-text">
+
+        <p class="hero-tagline">AI solutions for modern businesses</p>
+
+        <h1 class="typing">
+          <span id="typed"></span><span class="cursor">|</span>
+        </h1>
+
+        <p class="hero-subtext">
+          We design intelligent automation systems, AI-powered chatbots, and smart web applications 
+          that streamline operations and enhance customer experience.
+        </p>
+
+        <div class="hero-cta">
+          <button class="btn btn-primary" id="scrollToServices">Explore Services</button>
+          <button class="btn btn-ghost" id="scrollToContact">Contact Us</button>
+        </div>
+
+      </div>
+
+      <div class="hero-visual glass card">
+       <div class="hero-visual glass card">
+ <div class="hero-right">
+   <img src="assets/hero-image.png" alt="AI concept image" class="hero-img">
+
+
+
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =======================
+        TRUSTED BY SECTION
+  ============================ -->
+  <section class="trusted">
+    <div class="container trusted-inner">
+      <p class="trusted-text">Trusted by startups and small businesses</p>
+
+      <div class="trusted-logos">
+        <div class="logo-placeholder"></div>
+        <div class="logo-placeholder"></div>
+        <div class="logo-placeholder"></div>
+        <div class="logo-placeholder"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================
+        SERVICES
+  ============================ -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+
+      <div class="carousel-wrap">
+        <button class="carousel-btn prev">‹</button>
+
+        <div class="carousel" id="carousel">
+
+          <article class="service card">
+            <h3>AI Chatbots</h3>
+            <p>Custom conversational agents that automate support and guide customers efficiently.</p>
+          </article>
+
+          <article class="service card">
+            <h3>Automation Pipelines</h3>
+            <p>Workflow and process automation that enhances productivity across teams.</p>
+          </article>
+
+          <article class="service card">
+            <h3>Web Applications</h3>
+            <p>Fast, secure and scalable web solutions for business operations.</p>
+          </article>
+
+          <article class="service card">
+            <h3>Data Pipelines</h3>
+            <p>Clean, reliable data processing pipelines for analytics and decision-making.</p>
+          </article>
+
+          <article class="service card">
+            <h3>AI Strategy</h3>
+            <p>Consulting and planning for integrating AI into existing workflows.</p>
+          </article>
+
+        </div>
+
+        <button class="carousel-btn next">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================
+        WHY CHOOSE US
+  ============================ -->
+  <section id="why" class="why">
+    <div class="container">
+      <h2 class="section-title">Why Choose Us</h2>
+
+      <div class="why-grid">
+
+        <div class="why-card card glass">
+          <h3>Expert-Led Solutions</h3>
+          <p>We bring a deep understanding of AI tools, automation systems, and modern development practices.</p>
+        </div>
+
+        <div class="why-card card glass">
+          <h3>Clear Communication</h3>
+          <p>We maintain transparent, responsive communication through every stage of your project.</p>
+        </div>
+
+        <div class="why-card card glass">
+          <h3>Efficient Delivery</h3>
+          <p>We follow structured workflows that allow timely delivery without compromising quality.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================
+        CONTACT SECTION
+  ============================ -->
+  <section id="contact" class="contact">
+    <div class="container contact-inner">
+
+      <div class="contact-left card glass">
+        <h2>Contact Us</h2>
+        <p>Have a project in mind? We would be glad to discuss it.</p>
+
+        <form id="contactForm" novalidate>
+          <label>
+            <span>Name</span>
+            <input type="text" id="name" required>
+          </label>
+
+          <label>
+            <span>Email</span>
+            <input type="email" id="email" required>
+          </label>
+
+          <label>
+            <span>Message</span>
+            <textarea id="message" rows="5" required></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <button type="reset" class="btn btn-ghost">Reset</button>
+          </div>
+        </form>
+      </div>
+
+      <aside class="contact-right card">
+        <h3>Quick Info</h3>
+        <ul>
+          <li><strong>Email:</strong> hello@aiagency.example</li>
+          <li><strong>Location:</strong> India / Remote</li>
+          <li><strong>Response time:</strong> 24 hours</li>
+        </ul>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- =======================
+        MODAL
+  ============================ -->
+  <div class="modal" id="successModal" aria-hidden="true">
+    <div class="modal-content card">
+      <button class="close-modal" id="closeModal">✕</button>
+      <h3>Message Received</h3>
+      <p>Your message has been received successfully. We will get back to you shortly.</p>
+      <button class="btn btn-primary" id="modalOk">Okay</button>
+    </div>
+  </div>
+
+  <!-- =======================
+        FOOTER
+  ============================ -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> AI Agency. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
